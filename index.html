@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منارة التعليم الجزائري - فروض، اختبارات وحلول نموذجية لجميع الأطوار</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="الموقع التعليمي الجزائري الأول لتحميل فروض واختبارات الفصول الثلاثة مع الحلول النموذجية للأطوار الابتدائي، المتوسط، والثانوي. مواضيع جاهزة للتحميل المباشر.">
+    <meta name="keywords" content="فروض، اختبارات، حلول نموذجية، التعليم الابتدائي، التعليم المتوسط، التعليم الثانوي، شهادة التعليم المتوسط BEM، بكالوريا BAC، الجزائر">
+    <meta name="author" content="منارة التعليم الجزائري">
+    
+    <!-- Google Fonts - Cairo and Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <!-- Header / Navigation Bar -->
+    <header class="main-header" id="site-header">
+        <div class="header-container">
+            <div class="logo-area" id="logo-btn" role="button" tabindex="0">
+                <!-- SVG Graduation Cap Logo -->
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3L1 9L12 15L21 10.09V17H23V9L12 3Z" fill="currentColor"/>
+                    <path d="M5 12.18V17.18C5 19.28 8.13 21 12 21C15.87 21 19 19.28 19 17.18V12.18L12 16L5 12.18Z" fill="currentColor"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-title">منارة التعليم</span>
+                    <span class="logo-subtitle">بوابتك للنجاح الدراسي</span>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#" class="nav-link active" data-target="home">الرئيسية</a></li>
+                    <li><a href="#" class="nav-link" data-target="primary">الطور الابتدائي</a></li>
+                    <li><a href="#" class="nav-link" data-target="middle">الطور المتوسط</a></li>
+                    <li><a href="#" class="nav-link" data-target="secondary">الطور الثانوي</a></li>
+                </ul>
+            </nav>
+
+            <!-- Action Controls (Theme switch & Mobile Menu) -->
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="تغيير الوضع">
+                    <!-- Sun Icon (visible in Dark mode) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <!-- Moon Icon (visible in Light mode) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/>
+                    </svg>
+                </button>
+
+                <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="فتح القائمة">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ad Slot: Top Banner (AdSense Placement) -->
+    <div class="adsense-container adsense-top-banner">
+        <div class="adsense-placeholder">
+            <span>مساحة إعلانية علوية (Google AdSense)</span>
+            <small>كود الإعلان المستقبلي يوضع هنا</small>
+            <!-- تعليق للمستخدم: الصق شفرة إعلان AdSense هنا بدلاً من div.adsense-placeholder -->
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <h1>ابحث عن فروضك واختباراتك بسهولة</h1>
+            <p>بنك شامل للامتحانات الرسمية والفروض المدرسية مع الحلول المفصلة لجميع السنوات والشعب الدراسية بالجزائر</p>
+            
+            <!-- Smart Search Bar -->
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <input type="text" id="main-search-input" placeholder="مثال: فرض الرياضيات الفصل الأول رابعة متوسط..." aria-label="بحث في الامتحانات والفروض">
+                    <button class="search-btn" id="search-action-btn">ابحث الآن</button>
+                </div>
+                <!-- Quick Tags -->
+                <div class="quick-tags">
+                    <span>الرائج الآن:</span>
+                    <button class="tag-btn" data-search="بكالوريا رياضيات">بكالوريا رياضيات</button>
+                    <button class="tag-btn" data-search="فرض فيزياء رابعة متوسط">فيزياء رابعة متوسط</button>
+                    <button class="tag-btn" data-search="امتحان لغة عربية خامسة ابتدائي">خامسة ابتدائي</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Dynamic Area -->
+    <main class="main-layout container">
+        
+        <!-- Breadcrumbs Navigation -->
+        <div class="breadcrumbs" id="site-breadcrumbs">
+            <!-- Rendered Dynamically by JS: الرئيسية > الطور المتوسط > السنة الرابعة... -->
+        </div>
+
+        <!-- Dynamic Container where JS switches sections -->
+        <div id="dynamic-app-content">
+
+            <!-- ================= VIEW 1: HOME VIEW (DEFAULT) ================= -->
+            <section id="view-home" class="app-view active">
+                <div class="section-title-center">
+                    <h2>اختر الطور التعليمي للبدء</h2>
+                    <p>اختر المستوى الدراسي للوصول إلى المواد والامتحانات المتوفرة</p>
+                </div>
+
+                <!-- Official Exams & Results Countdown Section -->
+                <div class="countdowns-container">
+                    <!-- Countdown 1: BAC -->
+                    <div class="countdown-card" id="bac-countdown-card">
+                        <div class="countdown-card-header">
+                            <span class="countdown-badge bac-badge">شهادة البكالوريا BAC 2026</span>
+                            <h3 class="countdown-status-label" id="bac-status-label">متبقي على انطلاق امتحانات البكالوريا:</h3>
+                        </div>
+                        <div class="countdown-digits">
+                            <div class="digit-box">
+                                <span class="digit-val" id="bac-days">00</span>
+                                <span class="digit-lbl">أيام</span>
+                            </div>
+                            <div class="digit-divider">:</div>
+                            <div class="digit-box">
+                                <span class="digit-val" id="bac-hours">00</span>
+                                <span class="digit-lbl">ساعات</span>
+                            </div>
+                            <div class="digit-divider">:</div>
+                            <div class="digit-box">
+                                <span class="digit-val" id="bac-minutes">00</span>
+                                <span class="digit-lbl">دقائق</span>
+                            </div>
+                            <div class="digit-divider">:</div>
+                            <div class="digit-box">
+                                <span class="digit-val" id="bac-seconds">00</span>
+                                <span class="digit-lbl">ثواني</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Countdown 2: BEM -->
+                    <div class="countdown-card" id="bem-countdown-card">
+                        <div class="countdown-card-header">
+                            <span class="countdown-badge bem-badge">شهادة التعليم المتوسط BEM 2026</span>
+                            <h3 class="countdown-status-label" id="bem-status-label">متبقي على إعلان النتائج الرسمية:</h3>
+                        </div>
+                        <div class="countdown-digits">
+                            <div class="digit-box">
+                                <span class="digit-val" id="bem-days">00</span>
+                                <span class="digit-lbl">أيام</span>
+                            </div>
+                            <div class="digit-divider">:</div>
+                            <div class="digit-box">
+                                <span class="digit-val" id="bem-hours">00</span>
+                                <span class="digit-lbl">ساعات</span>
+                            </div>
+                            <div class="digit-divider">:</div>
+                            <div class="digit-box">
+                                <span class="digit-val" id="bem-minutes">00</span>
+                                <span class="digit-lbl">دقائق</span>
+                            </div>
+                            <div class="digit-divider">:</div>
+                            <div class="digit-box">
+                                <span class="digit-val" id="bem-seconds">00</span>
+                                <span class="digit-lbl">ثواني</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Educational Levels Cards Grid -->
+                <div class="levels-grid">
+                    <!-- Card 1: Primary Education -->
+                    <div class="level-card card-primary" data-level="primary" role="button" tabindex="0">
+                        <div class="card-icon-container">
+                            <!-- SVG Blocks Icon -->
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>التعليم الابتدائي</h3>
+                        <p>من السنة الأولى إلى السنة الخامسة ابتدائي. تأسيس متين ومواضيع مبسطة.</p>
+                        <span class="level-badge">1 - 5 ابتدائي</span>
+                        <div class="card-footer-action">
+                            <span>تصفح السنوات الدراسية</span>
+                            <span class="arrow-icon">←</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Middle Education -->
+                    <div class="level-card card-middle" data-level="middle" role="button" tabindex="0">
+                        <div class="card-icon-container">
+                            <!-- SVG Book Open Icon -->
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21C12 21 8.5 17 3 17H2V3H3C7.5 3 12 7 12 7C12 7 16.5 3 21 3H22V17H21C15.5 17 12 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 7V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>التعليم المتوسط</h3>
+                        <p>من السنة الأولى إلى الرابعة متوسط. تحضير شامل لشهادة التعليم المتوسط (BEM).</p>
+                        <span class="level-badge">1 - 4 متوسط</span>
+                        <div class="card-footer-action">
+                            <span>تصفح السنوات الدراسية</span>
+                            <span class="arrow-icon">←</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Secondary Education -->
+                    <div class="level-card card-secondary" data-level="secondary" role="button" tabindex="0">
+                        <div class="card-icon-container">
+                            <!-- SVG Award / Certificate Icon -->
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>التعليم الثانوي</h3>
+                        <p>السنة 1، 2، و3 ثانوي مع تقسيم الشعب والتحضير لشهادة البكالوريا (BAC).</p>
+                        <span class="level-badge">1 - 3 ثانوي</span>
+                        <div class="card-footer-action">
+                            <span>تصفح السنوات والشعب</span>
+                            <span class="arrow-icon">←</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= VIEW 2: LEVEL DETAIL VIEW ================= -->
+            <section id="view-level-detail" class="app-view">
+                <div class="section-header-nav">
+                    <button class="back-btn" id="level-detail-back">← العودة للرئيسية</button>
+                    <h2 id="level-detail-title">التعليم المتوسط</h2>
+                </div>
+                
+                <p class="section-desc">اختر السنة الدراسية المطلوبة للوصول إلى المواد التعليمية المقررة:</p>
+                
+                <!-- Grid of Years / Classes -->
+                <div class="years-grid" id="years-grid-container">
+                    <!-- Rendered Dynamically by JS -->
+                </div>
+            </section>
+
+            <!-- ================= VIEW 3: SECONDARY STREAMS VIEW ================= -->
+            <section id="view-secondary-streams" class="app-view">
+                <div class="section-header-nav">
+                    <button class="back-btn" id="streams-back">← العودة للسنوات</button>
+                    <h2 id="streams-title">السنة الثانية ثانوي</h2>
+                </div>
+                
+                <p class="section-desc">الرجاء تحديد الشعبة الدراسية لعرض المواد المخصصة:</p>
+                
+                <!-- Grid of Secondary Branches -->
+                <div class="streams-grid" id="streams-grid-container">
+                    <!-- Rendered Dynamically by JS (علوم تجريبية، رياضيات، لغات...) -->
+                </div>
+            </section>
+
+            <!-- ================= VIEW 4: SUBJECTS GRID VIEW ================= -->
+            <section id="view-subjects" class="app-view">
+                <div class="section-header-nav">
+                    <button class="back-btn" id="subjects-back">← العودة للخلف</button>
+                    <h2 id="subjects-title">مواد السنة الرابعة متوسط</h2>
+                </div>
+                
+                <p class="section-desc">اختر المادة التعليمية لتصفح الفروض والاختبارات الخاصة بالفصول الثلاثة:</p>
+                
+                <!-- Grid of Subjects -->
+                <div class="subjects-grid" id="subjects-grid-container">
+                    <!-- Rendered Dynamically by JS (رياضيات، فيزياء...) -->
+                </div>
+            </section>
+
+            <!-- ================= VIEW 5: EXAMS LIST VIEW (MAIN TABLE) ================= -->
+            <section id="view-exams-list" class="app-view">
+                <div class="section-header-nav">
+                    <button class="back-btn" id="exams-list-back">← العودة للمواد</button>
+                    <h2 id="exams-list-title">الرياضيات - السنة الرابعة متوسط</h2>
+                </div>
+
+                <!-- Ad Slot: Inside page ad -->
+                <div class="adsense-container adsense-mid-banner">
+                    <div class="adsense-placeholder">
+                        <span>مساحة إعلانية (إعلانات داخل الصفحة / Google AdSense)</span>
+                        <!-- كود إعلان AdSense المستقبلي -->
+                    </div>
+                </div>
+
+                <!-- Terms/Semester Selector Tabs -->
+                <div class="terms-tabs-container">
+                    <div class="terms-tabs" role="tablist">
+                        <button class="term-tab-btn active" data-term="1" role="tab" aria-selected="true">الفصل الأول</button>
+                        <button class="term-tab-btn" data-term="2" role="tab" aria-selected="false">الفصل الثاني</button>
+                        <button class="term-tab-btn" data-term="3" role="tab" aria-selected="false">الفصل الثالث</button>
+                    </div>
+                </div>
+
+                <!-- Exams Table & Download Section -->
+                <div class="exams-table-wrapper">
+                    <table class="exams-table">
+                        <thead>
+                            <tr>
+                                <th>اسم الفرض / الاختبار</th>
+                                <th>الفصل</th>
+                                <th>معاينة</th>
+                                <th>تحميل الموضوع</th>
+                                <th>تحميل الحل النموذجي</th>
+                            </tr>
+                        </thead>
+                        <tbody id="exams-table-body">
+                            <!-- Rendered Dynamically by JS -->
+                        </tbody>
+                    </table>
+                    
+                    <!-- Empty State for Exams -->
+                    <div class="empty-state-container" id="exams-empty-state" style="display: none;">
+                        <svg class="empty-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM17 12H7V10H17V12ZM14 16H7V14H14V16ZM17 8H7V6H17V8Z" fill="currentColor"/>
+                        </svg>
+                        <p>عذراً، لا توجد اختبارات مرفوعة حالياً لهذا الفصل والمادة.</p>
+                        <small>نقوم بتحديث بنك الفروض باستمرار، يرجى مراجعتنا لاحقاً.</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= VIEW 6: SEARCH RESULTS VIEW ================= -->
+            <section id="view-search-results" class="app-view">
+                <div class="section-header-nav">
+                    <button class="back-btn" id="search-back">← العودة للرئيسية</button>
+                    <h2>نتائج البحث</h2>
+                </div>
+                
+                <p class="search-summary-text" id="search-query-summary">تبحث عن: <span id="search-keyword">"رياضيات"</span> - وجدنا <span id="search-count">0</span> نتيجة</p>
+                
+                <div class="search-results-list" id="search-results-container">
+                    <!-- Rendered Dynamically by JS -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Ad Slot: Bottom Banner (AdSense Placement) -->
+    <div class="adsense-container adsense-bottom-banner">
+        <div class="adsense-placeholder">
+            <span>مساحة إعلانية سفلية (Google AdSense)</span>
+            <small>كود الإعلان المستقبلي يوضع هنا في تذييل الموقع</small>
+            <!-- تعليق للمستخدم: الصق شفرة إعلان AdSense هنا بدلاً من div.adsense-placeholder -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3L1 9L12 15L21 10.09V17H23V9L12 3Z" fill="currentColor"/>
+                        <path d="M5 12.18V17.18C5 19.28 8.13 21 12 21C15.87 21 19 19.28 19 17.18V12.18L12 16L5 12.18Z" fill="currentColor"/>
+                    </svg>
+                    <span>منارة التعليم الجزائري</span>
+                </div>
+                <p class="footer-desc">بوابتك الشاملة لتحميل الفروض والامتحانات الرسمية وفق المناهج التعليمية الجزائرية لجميع الأطوار الدراسية.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#" class="footer-nav-link" data-target="home">الرئيسية</a></li>
+                    <li><a href="#" class="footer-nav-link" data-target="primary">التعليم الابتدائي</a></li>
+                    <li><a href="#" class="footer-nav-link" data-target="middle">التعليم المتوسط</a></li>
+                    <li><a href="#" class="footer-nav-link" data-target="secondary">التعليم الثانوي</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-legal">
+                <h4>المساعدة والقوانين</h4>
+                <ul>
+                    <li><a href="#" id="privacy-policy-btn">سياسة الخصوصية</a></li>
+                    <li><a href="#" id="contact-us-btn">اتصل بنا</a></li>
+                </ul>
+                <div class="adsense-note">
+                    <small>الموقع متوافق تماماً مع شروط وقوانين Google AdSense لتقديم تجربة إعلانية آمنة وموثوقة.</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 منارة التعليم الجزائري. جميع الحقوق محفوظة.</p>
+                <div class="author-credits">
+                    تم التطوير بحب لمساعدة الطلاب الجزائريين 🇩🇿
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= MODALS SECTION ================= -->
+
+    <!-- Modal 1: PDF Preview Modal -->
+    <div class="modal" id="pdf-preview-modal" aria-hidden="true">
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-container modal-large">
+            <div class="modal-header">
+                <h3 id="pdf-modal-title">معاينة الملف</h3>
+                <button class="modal-close-btn" data-close-modal aria-label="إغلاق">&times;</button>
+            </div>
+            <div class="modal-body pdf-modal-body">
+                <!-- Instruction banner to user inside preview -->
+                <div class="pdf-user-instruction">
+                    <p>ℹ️ <strong>ملاحظة للمالك:</strong> يمكنك استبدال الرابط أدناه برابط ملف الـ PDF الفعلي (على Google Drive أو Dropbox أو خادم خاص).</p>
+                </div>
+                
+                <!-- Simulated PDF Container -->
+                <div class="pdf-viewer-simulator" id="pdf-simulator">
+                    <svg class="pdf-doc-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6C4.9 2 4.01 2.9 4.01 4L4 20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" fill="currentColor"/>
+                    </svg>
+                    <h4 id="pdf-sim-title">ملف امتحان نموذجي.pdf</h4>
+                    <p class="pdf-sim-size">الحجم المقدر: 1.4 ميغابايت</p>
+                    <p class="pdf-sim-desc">هذه معاينة تجريبية تفاعلية للملف المطلوب.</p>
+                    
+                    <!-- We can also load an iframe here if we have a real PDF -->
+                    <iframe id="pdf-preview-iframe" src="" style="display: none; width: 100%; height: 500px; border: none;"></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-primary" id="pdf-modal-download-btn" target="_blank" download>تحميل مباشر للملف</a>
+                <button class="btn btn-secondary" data-close-modal>إغلاق المعاينة</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Privacy Policy Modal -->
+    <div class="modal" id="privacy-policy-modal" aria-hidden="true">
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>سياسة الخصوصية (Privacy Policy)</h3>
+                <button class="modal-close-btn" data-close-modal aria-label="إغلاق">&times;</button>
+            </div>
+            <div class="modal-body legal-modal-body">
+                <p class="last-updated">آخر تحديث: 6 جوان 2026</p>
+                <p>مرحباً بك في موقع <strong>منارة التعليم الجزائري</strong>. نحن نحترم خصوصيتك ونسعى جاهدين لحماية بياناتك الشخصية. توضح هذه السياسة كيف نتعامل مع البيانات وتوافقنا مع شروط برنامج <strong>Google AdSense</strong>.</p>
+                
+                <h4>1. ملفات تعريف الارتباط وسجل الزوار</h4>
+                <p>نحن نستخدم ملفات تعريف الارتباط (Cookies) لتحسين تجربة المستخدم وتحليل حركة المرور على الموقع. كما يقوم خادمنا تلقائياً بتسجيل بعض البيانات العامة كنوع المتصفح ونظام التشغيل ووقت الزيارة.</p>
+                
+                <h4>2. إعلانات الطرف الثالث (Google AdSense)</h4>
+                <p>تستخدم شركة Google بصفتها مورداً خارجياً ملفات تعريف الارتباط لعرض الإعلانات على موقعنا. يتيح استخدام Google لملف تعريف الارتباط DART عرض الإعلانات للمستخدمين استناداً إلى زياراتهم لموقعنا ومواقع أخرى على الإنترنت. يمكن للمستخدمين إلغاء استخدام ملف تعريف الارتباط DART عبر زيارة سياسة الخصوصية الخاصة بشبكة Google الإعلانية للمحتوى.</p>
+                
+                <h4>3. إخلاء المسؤولية وروابط المواقع الخارجية</h4>
+                <p>قد يحتوي موقعنا على روابط لمواقع خارجية لتسهيل تحميل الملفات (مثل خوادم الرفع السحابية). نحن لسنا مسؤولين عن سياسة الخصوصية أو محتوى تلك المواقع وننصح دائماً بقراءة شروط استخدامها.</p>
+                
+                <h4>4. التعديل على سياسة الخصوصية</h4>
+                <p>نحتفظ بالحق في تعديل هذه السياسة في أي وقت، وسيتم إخطار الزوار بأي تغييرات عبر تحديث تاريخ الصفحة.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-close-modal>أوافق وأغلق</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Contact Us Modal -->
+    <div class="modal" id="contact-us-modal" aria-hidden="true">
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>اتصل بنا</h3>
+                <button class="modal-close-btn" data-close-modal aria-label="إغلاق">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-intro-text">هل لديك أي اقتراح، شكوى، أو ترغب في إرسال مواضيع وفروض لنشرها على الموقع؟ يسعدنا تواصلك معنا مباشرة عبر تعبئة النموذج التالي:</p>
+                
+                <!-- Contact Form -->
+                <form id="contact-form" class="contact-form-layout">
+                    <div class="form-group">
+                        <label for="contact-name">الاسم الكامل <span class="required">*</span></label>
+                        <input type="text" id="contact-name" name="name" required placeholder="أدخل اسمك الكريم">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">البريد الإلكتروني <span class="required">*</span></label>
+                        <input type="email" id="contact-email" name="email" required placeholder="example@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">الموضوع <span class="required">*</span></label>
+                        <input type="text" id="contact-subject" name="subject" required placeholder="عنوان رسالتك">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">الرسالة <span class="required">*</span></label>
+                        <textarea id="contact-message" name="message" rows="5" required placeholder="اكتب تفاصيل رسالتك هنا..."></textarea>
+                    </div>
+                    
+                    <!-- Alert Message inside form -->
+                    <div class="form-alert" id="contact-form-alert" style="display: none;"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= NOOR AI CHATBOT SYSTEM ================= -->
+    <div class="noor-chat-wrapper">
+        <!-- Floating Chat Button -->
+        <button class="noor-chat-toggle" id="noor-chat-toggle-btn" aria-label="اسأل المساعدة الذكية نور">
+            <span class="pulse-ring"></span>
+            <!-- AI/Robot Icon SVG -->
+            <svg class="noor-toggle-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6ZM12 20.2C9.39 20.2 7.17 19 5.86 17.18C5.89 15.19 9.89 14.1 12 14.1C14.1 14.1 18.1 15.19 18.1 17.18C16.81 19 14.59 20.2 12 20.2Z" fill="currentColor"/>
+            </svg>
+            <span class="noor-toggle-label">اسأل نور 🤖</span>
+        </button>
+
+        <!-- Chat Panel Window -->
+        <div class="noor-chat-panel" id="noor-chat-panel" aria-hidden="true">
+            <!-- Panel Header -->
+            <div class="noor-chat-header">
+                <div class="noor-avatar-container">
+                    <div class="noor-avatar">ن</div>
+                    <span class="noor-online-badge"></span>
+                </div>
+                <div class="noor-header-info">
+                    <h4>نور - المساعد الذكي 🤖</h4>
+                    <p>متصل الآن لمساعدتك</p>
+                </div>
+                <button class="noor-close-btn" id="noor-close-btn" aria-label="إغلاق">&times;</button>
+            </div>
+
+            <!-- Panel Messages Container -->
+            <div class="noor-chat-messages" id="noor-chat-messages">
+                <!-- Welcome Message from Noor -->
+                <div class="noor-message noor-bot">
+                    <div class="message-content">
+                        مرحباً بك! أنا **نور**، مساعدتك الذكية لمراجعة وحل الدروس والامتحانات 🎓✨.
+                        كيف يمكنني مساعدتك اليوم؟ يمكنك كتابة سؤالك مباشرة، أو استخدام الاقتراحات أدناه، أو **رفع صورة لتمرينك** لنقوم بحله معاً!
+                    </div>
+                </div>
+                
+                <!-- Suggestions Chips inside chat -->
+                <div class="noor-suggestions" id="noor-suggestions-container">
+                    <button class="noor-suggest-chip" data-msg="كيف أراجع لشهادة البكالوريا BAC؟">🎓 نصائح للباك</button>
+                    <button class="noor-suggest-chip" data-msg="ساعدني في حل تمرين رياضيات">📐 تمرين رياضيات</button>
+                    <button class="noor-suggest-chip" data-msg="كيف أحضر لشهادة التعليم المتوسط BEM؟">📝 نصائح للبيام</button>
+                </div>
+            </div>
+
+            <!-- Panel Input Form -->
+            <div class="noor-chat-footer">
+                <!-- Mock Image Upload Indicator / Trigger -->
+                <div class="noor-attachment-area">
+                    <label for="noor-image-upload" class="noor-attach-btn" title="صوّر تمرينك وارفع حله">
+                        📷 <span>حل تمرين بالصورة</span>
+                    </label>
+                    <input type="file" id="noor-image-upload" accept="image/*" style="display: none;">
+                </div>
+                
+                <!-- Main Input Form -->
+                <form id="noor-chat-form" class="noor-input-form">
+                    <input type="text" id="noor-chat-input" placeholder="اسأل نور عن أي تمرين أو مادة..." required autocomplete="off">
+                    <button type="submit" class="noor-send-btn" aria-label="إرسال">
+                        <!-- SVG Send Icon -->
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;">
+                            <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
