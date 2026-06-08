@@ -2180,4 +2180,67 @@ body.dark-mode .moon-icon {
     }
 }
 
+/* ==========================================================================
+   ACTIVE ADVERTISING BANNER STYLING
+   ========================================================================== */
+
+.ad-link-wrapper {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    outline: none;
+    transition: transform var(--transition-fast);
+}
+
+.active-ad {
+    background: linear-gradient(135deg, rgba(13, 148, 136, 0.05) 0%, rgba(2, 132, 199, 0.03) 100%);
+    border: 2px solid var(--border-color) !important;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    min-height: 95px;
+    padding: 18px 25px;
+}
+
+.active-ad .ad-title {
+    color: var(--primary-color) !important;
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+    display: block;
+    font-family: var(--font-headings);
+}
+
+.active-ad .ad-desc {
+    color: var(--text-body) !important;
+    font-size: 0.8rem;
+    opacity: 0.9;
+    display: block;
+    line-height: 1.4;
+}
+
+/* Hover State */
+.ad-link-wrapper:hover {
+    transform: translateY(-2px);
+}
+
+.ad-link-wrapper:hover .active-ad {
+    border-color: var(--primary-color) !important;
+    background: linear-gradient(135deg, var(--primary-light) 0%, rgba(2, 132, 199, 0.08) 100%) !important;
+    box-shadow: var(--shadow-md);
+}
+
+/* Dark Mode Overrides */
+body.dark-mode .active-ad {
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.07) 0%, rgba(56, 189, 248, 0.04) 100%);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .ad-link-wrapper:hover .active-ad {
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.15) 0%, rgba(56, 189, 248, 0.08) 100%) !important;
+    border-color: var(--primary-color) !important;
+}
+
+
+
+
 
